@@ -25,17 +25,29 @@ System.out.println(sent [3]);
 		//7. make an array of 50 integers
 int [] num = new int [50];
 		//8. use a for loop to make every value of the integer array a random number
-Random r = new Random (50);
+Random r = new Random ();
 for (int i = 0; i < num.length; i++) {
-	
+	num [i] = r.nextInt(50);
 }
 		//9. without printing the entire array, print only the smallest number on the array
-
+int s = num[0];
+for (int i = 0; i < num.length; i++) {
+	if(num[i]<s) {
+		s = num[i]
+;	}
+}
 		//10 print the entire array to see if step 8 was correct
-
+for (int i = 0; i < num.length; i++) {
+	System.out.println(num[i]);
+}
 		//11. print the largest number in the array.
-		
+int l = num[0];
+for (int i = 0; i < num.length; i++) {
+	if(num[i]>l) {
+		l = num[i]
+;	}
+}
 		//12. print only the last element in the array
-		
+		System.out.println(num[50]);
 	}
 }
