@@ -48,6 +48,6 @@ for (int i = 0; i < num.length; i++) {
 ;	}
 }
 		//12. print only the last element in the array
-		System.out.println(num[50]);
+		System.out.println(num[49]);
 	}
 }
