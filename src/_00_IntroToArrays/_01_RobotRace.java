@@ -14,14 +14,21 @@ public class _01_RobotRace {
 			rob[i] = new Robot();
 			rob[i].moveTo(i*250, 500);
 		}
+		boolean isRacing = true;
 		Random r = new Random ();
+		while(isRacing == true) {
 		for(int i = 0; i < rob.length; i++) {
 			int ran = r.nextInt(49);
 			rob[i].move(ran);
+			if(rob[i].getY() < 0) {
+				isRacing = false;
+				System.out.println("robot "+ i + " has won!");
+				break;
+			}
 		}
-		while () {
-			
-		}
+
+		}	
+		
 	}
 		//2. create an array of 5 robots.
 
